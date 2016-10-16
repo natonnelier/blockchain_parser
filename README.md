@@ -1,6 +1,6 @@
 # BlockchainParser
 
-Bitcoin Blockchain parser. Work in progress, still not suitable for usage.
+Bitcoin Blockchain parser written in elixir. Work in progress, still not suitable for usage.
 
 ## Installation
 
