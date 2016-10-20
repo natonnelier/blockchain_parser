@@ -10,4 +10,17 @@ defmodule BlockchainParser.Models.Block do
             nonce: 0, # uint32_t, Random number representing the proof of work for the mining of this block
             transactions_count: 0 # integer, Number of transaction entries in this block
 
+  def parse(data)
+	
+	<<version::unsigned-little-integer-size(32),
+	  previous_block::bytes-size(32),
+	  merkle_root::bytes-size(32),
+	  timestamp::unsigned-little-integer-size(32),
+	  bits::unsigned-little-integer-size(32),
+	  nonce::unsigned-little-integer-size(32),
+	  payload::binary>> = data
+
+  end
+
+
 end
